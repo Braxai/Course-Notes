@@ -35,16 +35,35 @@ ex: Two detectors D<sub>1</sub>, D<sub>2</sub> with false positive rates FP<sub>
 - Two detectors in series (both have to alert to trigger response) decreases FP rate and increase FN rate
 
 ### 1.6 Least privilege 
+Give a program the set of access privileges that it legeitimately needs to do its job and nothing more
+- minimize how much privilege each program and system component get
+
+Doesn't reduce probability of failure but reduces the expected cost of failures
 
 ### 1.7 Separation of responsibility 
+Split of privilege so no one person or program has complete power
+Require more than one party to approve before access is granted
 
 ### 1.8 Ensure complete mediation 
+When enforcing access control policies, check every access to every object
+Reference Monitor : single point through which all access must occur (ensures all access is monitored and protected)
 
 ### 1.9 Shanon's Maxim 
+Shannon's Maxim : attacker knows the system that they are attacking
+
+"Security through obscurity" : systems that rely on the secrecy of their design, algorithms, or source code to be secure. 
+- brittle and difficult to keep system design a secret
+- never rely on sobscurity as part of security
+
+Kerckhoff's Principle : crytopgrahic systems shuold remain secure even when the attacker knows all internal details of the system
+- secret key is only thing that must be kept secret and the system should be designed to make it easy to change leaked keys
 
 ### 1.10 Use fail-safe defaults 
+Fail safe default settings balance security with usability when a system goes down
+- if security mechanisms fail or crash they should default to secure behavior
 
 ### 1.11 Design security in from the start 
+
 
 ### 1.12 The Trusted Computing Base (TCB) 
 
