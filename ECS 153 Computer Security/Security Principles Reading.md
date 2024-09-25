@@ -63,8 +63,20 @@ Fail safe default settings balance security with usability when a system goes do
 - if security mechanisms fail or crash they should default to secure behavior
 
 ### 1.11 Design security in from the start 
-
+Editing an existing application after it has been spec'ed, designed, and implemented is very difficult. Avoid getting stuck with insecure architecture by contemplating security through development. 
 
 ### 1.12 The Trusted Computing Base (TCB) 
+The Trusted Computing Base (TCB) is that portion of the system that must operate correctly in order for the security goals of the system to be assured. 
+- Have to rely on every component in the TCB to work correctly, anything outside the TCB isn't relied upon in any way
+- Made as small as possible
+
+TCB Design Principles
+- Unbypassable (completeness) : no way to breach system security by bypassing the TCB
+- Tamper-resistant (security) : TCB protected from tampering by anyone else; other parts of the system outside the TCB should not be able to modify the TCB's code or state
+- Verifiable (correctness) : should be possible to verify correctness of the TCB; TCB as simple as possible
+
+Keep It Stimple, Stupid (KISS) : TCB simple and small, less code has less opportunities for mistakes; move as much as possible outside the TCB 
 
 ### 1.13 TOCTTOU Vulnerabilities 
+Time of Check to Time of Use (TOCTTOU) vulnerability usually arises when enforcing access control policies such as when using a reference monitor
+Between check and use of whatever state was checked the state changed causing a TOCTTOU vulnerability
