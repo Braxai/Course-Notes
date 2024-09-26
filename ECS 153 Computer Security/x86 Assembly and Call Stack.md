@@ -38,7 +38,8 @@ Address space divided into four sections (from low to high address) when program
 
 ### 2.4 Little-endian words
 little-endian : when storing a word in memory, the least significant byte is stored at the lowest address and the most significant at the highest address
-- ex: storing 0x44332211 in memory ![image](https://github.com/user-attachments/assets/a59ade3d-ea99-4c2d-8d66-effb56b7d71e)
+- ex: storing 0x44332211 in memory
+![image](https://github.com/user-attachments/assets/a59ade3d-ea99-4c2d-8d66-effb56b7d71e)
 big-endian : least signifcant byte at highest address (networking protocols often big-endian)
 
 using words on diagrams lets us abstract away little-endianness when working with memor diagrams but bytes are still being stored in little-endian
