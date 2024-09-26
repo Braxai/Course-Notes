@@ -37,12 +37,36 @@ Address space divided into four sections (from low to high address) when program
 ![image](https://github.com/user-attachments/assets/8ae92336-12f4-4a8b-a437-92424577eceb)
 
 ### 2.4 Little-endian words
+little-endian : when storing a word in memory, the least significant byte is stored at the lowest address and the most significant at the highest address
+- ex: storing 0x44332211 in memory ![image](https://github.com/user-attachments/assets/a59ade3d-ea99-4c2d-8d66-effb56b7d71e)
+big-endian : least signifcant byte at highest address (networking protocols often big-endian)
+
+using words on diagrams lets us abstract away little-endianness when working with memor diagrams but bytes are still being stored in little-endian
 
 ### 2.5 Registers
+Registers : store memory directly on CPU
+- each register stores one word
+- no addresses, referred to using names
+  - eip : instruction pointer stores address of machine instruction currently being executed
+  - ebp : base pointer stores address of the top of the current stack frame
+  - esp : stack pointer stores address of the bottom of the current stack frame
+  - six other registers : eax, ebx, ecx, edx, esi and edi
 
 ### 2.6 Stack: Pushing and popping 
+Push: add value to stack by decrementing esp then storing value in the newly allocated space
+
+Pop: remove value from stack by incrementing esp, copies popped value into a register 
+- value is not wiped away from memory but esp is incremented so the value is now in undefined memory 
 
 ### 2.7 x86 calling convention 
+Instructions composed of an opcode and zero or more operands
+addl $0x8, %ebx --> pseudocode EBX = EBX + 0x8
+- opcode : addl
+- operands : $0x8 (source) and %ebx (destination)
+registers preceded with %
+immediates preceded with $
+memory references use () and can have immediate offsets
+- 12(%esp) dereferences memory 12 bytes above the addres contained in ESP
 
 ### 2.8 x86 function calls 
 
