@@ -2,6 +2,7 @@ exhaustive attack : trying all possibilities
 Data Encryption Standard (DES) : 64 bits, 8 for parity, 2^56 keys
 - outdated, not effective today because key length too short 
 - AES is most popular modern standard encryption 
+Fuzzing : discover vulnerabilities with automated tools 
 
 Minimum Standard Security Principles 
 - Shanon's Maxim : security through obscurity 
@@ -20,3 +21,14 @@ when packet arrives it is compared to every rule, if there is a pattern match th
     - accept, deny (completey drop or reply to source)
     - less actions keeps firewall efficient 
     - default action deny
+
+- Complete Mediation : mediate access to resources from all different paths
+Web server deny list : any file starting with /x/ is inaccessible to user 
+- too many options to list
+- /www/../etc/password would get around a deny list of /etc/ 
+Alternatively can have an access list establishing exactly which directories are accessible to the user 
+
+- Trusted Computer Base (TCB) : part of a system that must be secure in order for system to be secure 
+  - assume and expect TCB is secure 
+  - ex: researching security of a web browser, TCB contains OS and hardware browser runs on top of
+  - keep as small as possible 
