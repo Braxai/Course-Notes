@@ -71,6 +71,29 @@ memory references use () and can have immediate offsets
 - 12(%esp) dereferences memory 12 bytes above the addres contained in ESP
 
 ### 2.8 x86 function calls 
+When function called, stack allocates extra space to store local variables nad other information relevant to the function 
+- stack grows down so the space is at lower addresses in memory
+- once funciotn returns, the space on the stack is freed up for future function calls
+function caller calls callee, program execution starts in caller, moves to callee, and then returns to caller
+- eip changed to point to instrucitons of callee
+- ebp and esp updated to point to top and bottom of the new stack frame
+  - save old values when function called so we can restore after function returns 
+
+11 steps to calling an x86 function and returning
+1. push arguments onto the stack ( pushed in reverse order )
+2. push old eip (rip : return instruction pointer) on the stack
+3. move eip to point to instructions of callee function
+4. push old ebp (sfp : saved frame pointer) on stack
+5. move ebp down
+  - point to top of new stack frame
+6. move esp down
+  - allocate space for new stack frame, amount determined by complexity of the function
+7. execute the function
+  - local variables and any other necessary data saved in new stack frame
+8. move esp up ( function ready to return )
+9. restore old ebp (sfp)
+10. restore old eip (rip)
+11. remove arugments from the stack (increment esp)
+    - no need to save old esp because it automatically moves to the bottom of the stack as we push values and returns to its old position as we remove values from the stack
 
 ### 2.9 x86 function call in assembly 
-
