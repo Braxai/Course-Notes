@@ -97,3 +97,56 @@ function caller calls callee, program execution starts in caller, moves to calle
     - no need to save old esp because it automatically moves to the bottom of the stack as we push values and returns to its old position as we remove values from the stack
 
 ### 2.9 x86 function call in assembly 
+```
+int main(void) {
+    foo(1, 2);
+}
+void foo(int a, int b) {
+    int bar[4];
+}
+```
+
+becomes 
+
+```
+main:
+    # Step 1. Push arguments on the stack in reverse order
+    push $2
+    push $1
+
+    # Steps 2-3. Save old eip (rip) on the stack and change eip
+    call foo
+
+    # Execution changes to foo now. After returning from foo:
+
+    # Step 11: Remove arguments from stack
+    add $8, %esp
+
+foo:
+    # Step 4. Push old ebp (sfp) on the stack
+    push %ebp
+
+    # Step 5. Move ebp down to esp
+    mov %esp, %ebp
+
+    # Step 6. Move esp down
+    sub $16, %esp
+
+    # Step 7. Execute the function (omitted here)
+
+    # Step 8. Move esp
+    mov %ebp, %esp
+
+    # Step 9. Restore old ebp (sfp)
+    pop %ebp
+
+    # Step 10. Restore old eip (rip)
+    pop %eip
+```
+
+steps 8/9 can be abbreviated as leave instruciton 
+step 10 can be abbreviated as ret instruction 
+- can write "leave ret" for each function
+
+4-6 called function prologue
+8-10 called funciton epilogue
