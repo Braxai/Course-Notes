@@ -1,1 +1,22 @@
-test
+exhaustive attack : trying all possibilities 
+Data Encryption Standard (DES) : 64 bits, 8 for parity, 2^56 keys
+- outdated, not effective today because key length too short 
+- AES is most popular modern standard encryption 
+
+Minimum Standard Security Principles 
+- Shanon's Maxim : security through obscurity 
+  - bad for 2 reasons 
+    1. More people looking at a system will be able to identify problems earlier before they cause major damage 
+    2. If obscurity is only form of security, when a vulnerability is found it is expensive to replace all the copies of the system in use 
+    - security in the keys, with key you have access, if the key is corrupted we can easily create a new key 
+
+- Fail Safe Default : default setting of system should make it safe, default policy to deny in case of failure 
+  - ex: traffic lights default to red on failure
+Firewall rules have a pattern and action
+when packet arrives it is compared to every rule, if there is a pattern match that action is taken, if not the packet is denied
+  - pattern : which packets to match
+    - ex: src_ip = 192.168.*.* or dst_port = 80
+  - action : what to do with the packet
+    - accept, deny (completey drop or reply to source)
+    - less actions keeps firewall efficient 
+    - default action deny
