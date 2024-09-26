@@ -49,7 +49,7 @@ When enforcing access control policies, check every access to every object
 Reference Monitor : single point through which all access must occur (ensures all access is monitored and protected)
 
 ### 1.9 Shanon's Maxim 
-Shannon's Maxim : attacker knows the system that they are attacking
+Shanon's Maxim : attacker knows the system that they are attacking
 
 "Security through obscurity" : systems that rely on the secrecy of their design, algorithms, or source code to be secure. 
 - brittle and difficult to keep system design a secret
