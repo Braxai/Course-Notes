@@ -26,9 +26,27 @@ The voltage transfer characters describes how ouput voltages vary as a function 
 ![image](https://github.com/user-attachments/assets/68998348-8e89-489c-b125-0062ff364c68)
 ![image](https://github.com/user-attachments/assets/0e11dc75-9360-4a22-afcd-19309ff6dbe0)
 
+Three distinct regions of operation 
+1. negative saturation
+2. linear region
+3. positive saturation
+When input voltage difference is small the op amp behaves as a linear device where output voltage is the difference between input voltage times multiplying constant (gain)
 
+If op amp confined to its linear operation region, a constraint is imposed on input voltages where v<sub>p</sub> = v<sub>n</sub>
+Negative feedback : signal fed back from output and subtracted from input signal 
+- causes input voltage difference to decrease and op amp to operate in its linear region 
+
+
+Input Current Constraint for an Ideal op amp : i<sub>p</sub> = i<sub>n</sub> = 0
+
+Circuit Analysis Steps 
+1. **check for negative feedback path**, if it exists assume op amp operating in linear region
+2. **write KCL equation** at inverting input terminal using input current constraing and Ohm's law to find currents
+3. **solve KCL equation** and calculate voltage at op amp's output terminal
+4. **compare voltage at op amp's output terminal to the power supply voltages** to determine whether the op amp is actually in its linear region or whether it has saturated 
 
 ### 5.3 The Inverting-Amplifier Circuit 
+
 
 ### 5.4 The SUmming-Amplifier Circuit
 
