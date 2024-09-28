@@ -74,12 +74,13 @@ The number of input voltages can be decreased or increased as needed
 
 ### 5.5 The Noninverting-Amplifier Circuit
 ![image](https://github.com/user-attachments/assets/96dd90dd-f160-45e9-88c0-14ae5bae8e2c)
+- output is scaled replica of input voltage
 
 Noninverting-Amplifier Equation : ![image](https://github.com/user-attachments/assets/98016c07-ec05-42a5-b92e-e441ea1ac523)
 
 ### 5.6 The Difference-Amplifier circuit 
 ![image](https://github.com/user-attachments/assets/17684bde-d972-418a-ac13-b54cb7076ba1)
-Output voltage is proportional to difference between the two input voltages 
+- output voltage is proportional to difference between the two input voltages 
 
 Difference-Amplifier Equation : ![image](https://github.com/user-attachments/assets/33b8076c-f30a-42be-b27a-07d2d83176c7)
 Simplified when ![image](https://github.com/user-attachments/assets/90dc579f-37c2-4bb9-95ba-ec7b460d2fa4) to ![image](https://github.com/user-attachments/assets/ad0bbb72-0349-4427-90b6-8ffa704a651d)
@@ -89,9 +90,21 @@ Common Mode Input : average of two input voltages
 ![image](https://github.com/user-attachments/assets/3611aaa6-3c3d-4e4d-bcfc-388536d3b866)
 - A<sub>cm</sub> : common mode gain
 - A<sub>dm</sub> : differential mode gain
+
 ![image](https://github.com/user-attachments/assets/18a2c06e-2f91-435f-8906-7ad95ee2d962)
 ![image](https://github.com/user-attachments/assets/df683fb6-820f-4b1b-8a37-263ad7e5d448)
 
+Ideal difference amplifier has zero common mode gain and nonzero (usually large) differential mode gain 
+- two factors resistance mismatches or a nonideal op amp influence ideal common mode gain 
+Common Mode Rejection Ratio (CMRR) : measures difference amplifier's performance
 
+![image](https://github.com/user-attachments/assets/06c5aa92-674a-47eb-b85d-14e15269daee)
 
 ### 5.7 Realistic Model for the Operational Amplifier 
+![image](https://github.com/user-attachments/assets/8efb32e5-2ecb-4b7c-9ffe-96479dd7448e)
+Three modifications to ideal op amp 
+1. finite input resistance R<sub>i</sub>
+2. finite open-loop gain A
+3. nonzero output resistance R<sub>o</sub>
+
+![image](https://github.com/user-attachments/assets/1bb8b255-6297-42c5-b009-cd3959b5878b)
