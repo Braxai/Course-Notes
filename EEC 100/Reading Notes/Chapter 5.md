@@ -7,6 +7,7 @@ String Gage : grid of thin wires whose resistance changes when the wires are len
 - Inverting input terminal (-)
 - Power Supply Terminals (V<sub>+</sub> and V<sub>-</sub>
 - Output Terminal
+- 
 ![image](https://github.com/user-attachments/assets/e4758340-00e8-4aa3-9d18-21272d86b96e) ![image](https://github.com/user-attachments/assets/f2da6088-dd38-470a-ac79-cf271d68bba9)
 
 
