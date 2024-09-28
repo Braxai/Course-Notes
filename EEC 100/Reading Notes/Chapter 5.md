@@ -47,8 +47,30 @@ Circuit Analysis Steps
 
 ### 5.3 The Inverting-Amplifier Circuit 
 
+![image](https://github.com/user-attachments/assets/af540405-67fd-4e09-954a-499422be6c27)
+- ideal op amp
+- two resistors
+- voltage source
+- short circuit connecting noninverting input terminal and common node
 
-### 5.4 The SUmming-Amplifier Circuit
+Inverting-Amplifier Equation : ![image](https://github.com/user-attachments/assets/bb50858e-083c-43ef-84fc-375171753169)
+- valid if op amp is operating in its linear region
+![image](https://github.com/user-attachments/assets/a5188da6-6fcc-44d8-84d1-65c5bd17a24e)
+
+Open Loop : if feedback path is opened amplifier is operating open loop 
+- open-loop gain : value of A
+
+### 5.4 The Summing-Amplifier Circuit
+![image](https://github.com/user-attachments/assets/dfe097a7-81e3-4a70-b3f4-ca56ba53c024)
+- output voltage is an inverted, scaled sum of the voltages applied to the input of the amplifier
+
+Inverting Summing-Amplifier Equation : ![image](https://github.com/user-attachments/assets/4ddcaf82-d727-406a-99c0-09e06c9c045b)
+
+If  ![image](https://github.com/user-attachments/assets/bae8ca24-f027-47f0-8a79-0aa3508450d9) then ![image](https://github.com/user-attachments/assets/d8ef01a6-47ea-4d30-a39c-7036f7b05098)
+
+If R<sub>f</sub> = R<sub>s</sub> then ![image](https://github.com/user-attachments/assets/c3a83f70-facb-46f2-a7e5-35afd9496e28)
+
+The number of input voltages can be decreased or increased as needed
 
 ### 5.5 The Noninverting-Amplifier Circuit
 
