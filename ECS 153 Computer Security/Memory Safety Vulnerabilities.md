@@ -112,3 +112,12 @@ ebp now point sinside the buffer, if a second function return happens, it allows
 8. pop %eip: Take the next value on the stack (which the program thinks is the rip, but is actually some attacker-controlled value inside the buffer), and place it in the eip register.
 
 ### 3.6 Other memory safety vulnerabilities
+Memory safety bugs : cases where an attacker cna read or write beyond the valid range of memory regions
+- buffer overflows, format string vulnerabilities, and other examples above
+- dangling pointer (pointer into a memory region that has been freed)
+- double-free bugs (dynamically allocated object is explicitly freed multiple times
+
+Use after free bugs : object or structure in memory is deallocated (freed) but still used
+- exploiting these vulnerabilities generally involves attacker triggering the creation of two separate objects that, because of the use-after-free on first object, actually share the same memory and the attacker can now use the second object to manipulate the interpretation of the first object
+
+Heap overflow : C++ vtable pointers exampe - programmer declares object on the heap which require storing a vtable pointer to an array of pointers. If programmer fials to check bounds correctly, the attacker can overflow one of the instnace variables of object x, if there is another object above x in memory the attacker can overwrite that object's vtable pointer with the value of another attacker-controlled buffer somewhere in memory
