@@ -158,9 +158,9 @@ foo:
     pop %eip
 ```
 
-steps 8/9 can be abbreviated as leave instruciton 
+steps 8/9 can be abbreviated as leave instruction 
 step 10 can be abbreviated as ret instruction 
 - can write "leave ret" for each function
 
 4-6 called function prologue
-8-10 called funciton epilogue
+8-10 called function epilogue
