@@ -54,7 +54,7 @@ little-endian : when storing a word in memory, the least significant byte is sto
 
 big-endian : least signifcant byte at highest address (networking protocols often big-endian)
 
-using words on diagrams lets us abstract away little-endianness when working with memor diagrams but bytes are still being stored in little-endian
+using words on diagrams lets us abstract away little-endianness when working with memory diagrams but bytes are still being stored in little-endian
 
 ### 2.5 Registers
 Registers : store memory directly on CPU
