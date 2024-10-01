@@ -76,6 +76,7 @@ Instructions composed of an opcode and zero or more operands
 addl $0x8, %ebx --> pseudocode EBX = EBX + 0x8
 - opcode : addl
 - operands : $0x8 (source) and %ebx (destination)
+
 registers preceded with %
 immediates preceded with $
 memory references use () and can have immediate offsets
