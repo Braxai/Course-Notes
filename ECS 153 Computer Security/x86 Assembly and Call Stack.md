@@ -3,6 +3,7 @@
 - 1 byte = 8 bits
 - 1 word = 32 bits (on 32-bit architectures)
 word : size of a pointer that depends on CPU architecture
+
 Binary	Hexadecimal	Binary	Hexadecimal
 
 0000	  0	          1000	  8
