@@ -4,15 +4,25 @@
 - 1 word = 32 bits (on 32-bit architectures)
 word : size of a pointer that depends on CPU architecture
 Binary	Hexadecimal	Binary	Hexadecimal
+
 0000	  0	          1000	  8
+
 0001	  1	          1001	  9
+
 0010	  2	          1010	  A
+
 0011	  3	          1011	  B
+
 0100	  4	          1100	  C
+
 0101	  5	          1101	  D
+
 0110	  6	          1110	  E
+
 0111  	7	          1111	  F
+
 0b before binary strings
+
 0x before hexadecimal strings
 
 ### 2.2 Compiler, Assembler, Linker, Loader (CALL)
