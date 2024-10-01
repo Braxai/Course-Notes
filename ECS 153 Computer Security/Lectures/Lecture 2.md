@@ -35,3 +35,47 @@ Organization :
     - LIFO works perfect for the caller callee local function variable conditions
     - stack never has holes in it whereas heap can (memory fragmentation : still a problem)
  
+static vars and code are separated because of different R W X permissions
+- stack:    R W
+- heap:     R W
+- static:   R W
+- code:     R   X
+write and execute permissions are mutually exclusive amongst each section ( W xor X )
+- security increased by preventing attacker from writing and executing malicious code in a particular section
+
+Function Calls 
+```
+int foo(int a, int b) {
+  int c;
+  bar(a, b);
+}
+int bar(int d, int e) {
+  int f, g;
+}
+```
+Stack
+a       |      |
+b       |      |
+c       |      | - before bar call
+b       |      | - arguments stored right to left
+a       |      |
+eip     |      |
+old ebp |      | - stored so we can return to foo when bar done
+f       |      | - local variables stored left to right 
+g       |      | - after bar
+
+eip : instruction pointer
+ebp : base pointer (top of stack frame)
+esp : stack pointer (bottom of stack frame)
+
+bar exits :
+- ebp points at old ebp
+- esp points at bottom of stack frame
+1. esp moved to where old ebp is stored
+2. pop old ebp and store in ebp
+3. esp points to eip
+4. ebp will point to it's location for foo
+5. pop eip and esp points to bar arguments
+6. increment esp to be above bar arguments and restore foo caller state 
+
+
