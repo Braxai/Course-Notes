@@ -85,9 +85,9 @@ memory references use () and can have immediate offsets
 - 12(%esp) dereferences memory 12 bytes above the addres contained in ESP
 
 ### 2.8 x86 function calls 
-When function called, stack allocates extra space to store local variables nad other information relevant to the function 
+When function called, stack allocates extra space to store local variables and other information relevant to the function 
 - stack grows down so the space is at lower addresses in memory
-- once funciotn returns, the space on the stack is freed up for future function calls
+- once function returns, the space on the stack is freed up for future function calls
 function caller calls callee, program execution starts in caller, moves to callee, and then returns to caller
 - eip changed to point to instrucitons of callee
 - ebp and esp updated to point to top and bottom of the new stack frame
