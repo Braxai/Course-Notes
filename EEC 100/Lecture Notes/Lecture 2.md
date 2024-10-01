@@ -30,3 +30,30 @@ Negative Feedback and the Linear Region Operation
 
 ![image](https://github.com/user-attachments/assets/e7cdf90e-2a9c-4f1b-a992-f60e41df9ecc)
 
+Noninverting Amplifier
+
+![image](https://github.com/user-attachments/assets/fd3e463a-d972-46c1-88c3-3a00bc96806a)
+![image](https://github.com/user-attachments/assets/4c9315f4-2eb7-450f-b78d-57cd17c13521)
+
+Voltage Follower (special case of noninverting amplifier)
+Vo = Vs
+
+![image](https://github.com/user-attachments/assets/94e256d8-a776-4104-9f44-e0bc8fe4804e)
+
+Why do we need an amplifier of gain 1? 
+
+![image](https://github.com/user-attachments/assets/bc798255-afec-440a-a4c6-c23ac368a638)
+
+Summing Amplifier 
+
+![image](https://github.com/user-attachments/assets/d51403f2-f7fe-414c-9126-89a8d7069a2e)
+
+KCL at negative terminal 
+
+![image](https://github.com/user-attachments/assets/fb13abb3-27eb-46a3-9960-8bad25ae41bd)
+
+Difference (differential) Amplifier 
+
+![image](https://github.com/user-attachments/assets/4f64ba5f-687e-4b9f-9aca-7ba44d66ce1c)
+![image](https://github.com/user-attachments/assets/c41b4f91-c44e-4298-835b-224338b747be)
+Solve without superposition: ![image](https://github.com/user-attachments/assets/b6fe3d54-599a-426b-9e05-d04c79a8ff69)
