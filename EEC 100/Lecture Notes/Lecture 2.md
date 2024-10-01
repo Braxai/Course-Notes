@@ -3,6 +3,7 @@
 Op-Amp Model
 
 ![image](https://github.com/user-attachments/assets/13ee22ec-660a-4bfb-8f4b-3c0836014621)
+Small mistake, bottom image V<sub>n</sub> instead of Vin
 
 Inverting Amplifier 
 
@@ -24,4 +25,8 @@ Analysis using Negative Feedback and Ideal Op-Amp model
 
 ![image](https://github.com/user-attachments/assets/f291b6dc-35f1-4e7d-80f0-c477da87cf31)
 ![image](https://github.com/user-attachments/assets/56a1d51e-0226-4c73-a95a-5597e81286f1)
+
+Negative Feedback and the Linear Region Operation 
+
+![image](https://github.com/user-attachments/assets/e7cdf90e-2a9c-4f1b-a992-f60e41df9ecc)
 
