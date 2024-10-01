@@ -55,13 +55,21 @@ int bar(int d, int e) {
 ```
 Stack
 a       |      |
+
 b       |      |
+
 c       |      | - before bar call
+
 b       |      | - arguments stored right to left
+
 a       |      |
+
 eip     |      |
+
 old ebp |      | - stored so we can return to foo when bar done
+
 f       |      | - local variables stored left to right 
+
 g       |      | - after bar
 
 eip : instruction pointer
