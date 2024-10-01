@@ -78,7 +78,9 @@ addl $0x8, %ebx --> pseudocode EBX = EBX + 0x8
 - operands : $0x8 (source) and %ebx (destination)
 
 registers preceded with %
+
 immediates preceded with $
+
 memory references use () and can have immediate offsets
 - 12(%esp) dereferences memory 12 bytes above the addres contained in ESP
 
