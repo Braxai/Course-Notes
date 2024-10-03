@@ -38,3 +38,13 @@ Output resistor of a stage should be as small as possible, and the input resisto
 ![image](https://github.com/user-attachments/assets/ea884a50-e1e2-440b-b7cc-2676c512670d)
 
 Can solve using equations for Va and Vout or doing KCL at 1 and 2
+
+![image](https://github.com/user-attachments/assets/7dbdb513-6545-4c8c-8111-153d6fbfecd6)
+
+Solve first two inverting amplfiers then treat last as a summing amplifier using superposition to find 6V answer
+- summing amplifier is on inverting terminal so -6 becomes 6
+
+Physical Limitations of Operational Amplifiers
+
+![image](https://github.com/user-attachments/assets/58ed5d0c-1f6b-408b-938d-8ee3a1853377)
+
