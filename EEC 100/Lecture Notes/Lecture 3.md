@@ -48,3 +48,27 @@ Physical Limitations of Operational Amplifiers
 
 ![image](https://github.com/user-attachments/assets/58ed5d0c-1f6b-408b-938d-8ee3a1853377)
 
+Nonideal Operational Amplifiers 
+
+![image](https://github.com/user-attachments/assets/4fbfe58e-545f-4737-a864-a6fd8974924a)
+
+Inverting Op-Amp Circuit 
+
+![image](https://github.com/user-attachments/assets/a7b63736-0a0d-42aa-a47a-8ce1d71255d0)
+
+example :
+
+![image](https://github.com/user-attachments/assets/25492ce4-f2c2-40bb-a3fb-d7f0cc3e0875)
+
+Noninverting Op-Amp Circuit
+
+![image](https://github.com/user-attachments/assets/072fb4df-926c-44c5-bf4f-1446ec42555f)
+
+Sinusoids Source
+
+![image](https://github.com/user-attachments/assets/dc1cbbac-305d-4354-ba73-c636ca7d5cd0)
+
+![image](https://github.com/user-attachments/assets/ca11cd8c-ce96-4749-8ed6-65837430d7d7)
+
+![image](https://github.com/user-attachments/assets/a60a3810-f9d1-4113-a5ea-ef625ff040dd)
+
