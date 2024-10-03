@@ -19,5 +19,5 @@ How to determine relationship between Vout, v1 and v2
 - use difference amplifier equation
 
 ![image](https://github.com/user-attachments/assets/7f2a3a3d-ea38-4d36-bc4b-756f9b26dafa)
-![image](https://github.com/user-attachments/assets/ef45442f-abaf-4bf7-9bde-23fa6a262caf)
+![image](https://github.com/user-attachments/assets/018c6c21-178b-4014-876a-dedaffab2d6d)
 
