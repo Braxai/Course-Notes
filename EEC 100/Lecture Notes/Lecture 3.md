@@ -31,7 +31,10 @@ Excersice : output depends on derivative
 
 Cascaded Op-Amp Circuits
 
-![image](https://github.com/user-attachments/assets/0192263a-3fc2-4b95-a3a1-586d4300b195)
+![image](https://github.com/user-attachments/assets/606cf63a-f2c4-425c-86bb-c3c01955ef61)
 
 Output resistor of a stage should be as small as possible, and the input resistor should be as big as possible to avoid interference between stages 
 
+![image](https://github.com/user-attachments/assets/ea884a50-e1e2-440b-b7cc-2676c512670d)
+
+Can solve using equations for Va and Vout or doing KCL at 1 and 2
