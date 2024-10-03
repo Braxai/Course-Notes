@@ -21,3 +21,17 @@ How to determine relationship between Vout, v1 and v2
 ![image](https://github.com/user-attachments/assets/7f2a3a3d-ea38-4d36-bc4b-756f9b26dafa)
 ![image](https://github.com/user-attachments/assets/018c6c21-178b-4014-876a-dedaffab2d6d)
 
+Op-Amp Circuits for Analog Signal Processing 
+
+![image](https://github.com/user-attachments/assets/9750a270-8f73-4fbc-93be-f7662b6c5535)
+
+Excersice : output depends on derivative
+
+![image](https://github.com/user-attachments/assets/dce08535-3cca-484a-b799-cfe4705a63b2)
+
+Cascaded Op-Amp Circuits
+
+![image](https://github.com/user-attachments/assets/0192263a-3fc2-4b95-a3a1-586d4300b195)
+
+Output resistor of a stage should be as small as possible, and the input resistor should be as big as possible to avoid interference between stages 
+
