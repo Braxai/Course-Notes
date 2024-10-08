@@ -38,6 +38,6 @@ shellcode : common name for malicious payload
 Stack Guard
 - prevent return-to-libc by marking end of buf (canary), we can validate that the canary is still valid before returning
   - if not then we know there was a buffer overflow attack
-  - mark should be placed below rip so the attacker must override the mark to override rip
+  - mark should be placed below rip so the attacker must override the mark to override rip 
     - callee places and checks canary (ensures below rip and checked before returning/running malicious code)
     - compiler generates code to create and place canary
