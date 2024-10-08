@@ -70,10 +70,12 @@ Pointer Authentication takes advantage of the fact that many addresses are unuse
 ASLR is a mitigation that tries to make predicting addresses in memory more difficult 
 ASLR : each time a progrum runs, the beginning section of memory is randomly chosen
 - if the program imports libraries we randomize the starting address of each library's source code 
-ASLR causes absolute addresses of variables, saved registers (sfp and rip), and code isntructions to be different each time the program is run
+ASLR causes absolute addresses of variables, saved registers (sfp and rip), and code instructions to be different each time the program is run
 - attacker can no longer overwrite some part of memory with a constant address
+
 Randomizing stack/heap prevents attacker from placing shellcode on the stack/heap without knowing the address of the stack/heap
-Randomizing code meansattacker cannot construct an ROP chain or return-to-libc attack without knowing the address of the code
+
+Randomizing code means attacker cannot construct an ROP chain or return-to-libc attack without knowing the address of the code
 
 Constraint: segments need to start at page bounrary (starting address of each section will be multiple of page size)
 
