@@ -89,4 +89,4 @@ Two methods to subvert ASLR
   - leaking the absolute address of the sfp enables deducing the address of the rip because the rip will still be 4 bytes above the sfp
 
 ### 4.13 Combining Mitigations 
-Synergistic Portection: use multiple mitigations together to force the attacker to find multiple vulnerabilities to exploit the program
+Synergistic Protection: use multiple mitigations together to force the attacker to find multiple vulnerabilities to exploit the program
