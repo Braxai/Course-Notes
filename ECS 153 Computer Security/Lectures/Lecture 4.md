@@ -41,3 +41,4 @@ These properties make it easy to find the desired gadgets
 - ROP compilers are able to do this process automatically
 
 In ROP each gadget is analagous to an instruction in a normal program
+ROP prevented by a canary 
