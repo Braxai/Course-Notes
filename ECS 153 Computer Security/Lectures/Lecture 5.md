@@ -43,6 +43,38 @@ let v in &mut array {
 v and array.push try to borrow (take reference) from array causing race condition
 - Rust solution : A value may be borrowed by at most one reference mutably or many references immutably 
   - can't have a mix of immutable and mutable references to a value
+Borrow Checker : part of Rust compiler that enforces these rules 
 
+Use After Free ( UAF ) : use after freeing from memory 
+- attacker can insert values into the space that was freed before it is used again
+- java solution : programmer can't free at all
+  - more overhead, java implements garbage collection that decides when to free memory
+  - stop the world : no threads can move forward before garbage collection finishes running  
 
+Resource Allocation Is Initialization ( RAII ) : Disallow free but let compiler determine when to free it 
+- compiler will free variables when they go out of scope because the program can no longer access them
+- implemented in C++
 
+```
+int *f() {
+  int a;
+  return &a;
+}
+int *g=f();
+```
+Dangling pointer --> no explicit free but implicit free 
+
+Rust solution
+```
+fn f()-->&'a U32 {
+  let v = 1;
+  &  v;
+}
+```
+Each value has lifetime
+- lifetime of v is lifetime of the function
+- U32 is a pointer with lifetime of caller
+  - pointer outlives value it points to causing a dangling pointer 
+Rust Solution : a reference must not outlive the value it refers to
+
+Rust has thread safety : compiler eliminates most race conditions 
