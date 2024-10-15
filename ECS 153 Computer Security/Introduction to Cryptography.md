@@ -3,9 +3,12 @@ Cryptography is difficult to implement and has high stakes. Using existing well-
 
 ### 5.2 Brief History of Cryptography 
 Cryptography : study of how to write secret messages 
+
 Pen and Ink period of simple messages decoded by hand 
+
 Mechanical era result of German project creating a mechanical device called the Enigma machine for encrypting messges in an unbreakable code 
-Modern cryp[tography destinguied by reliance on mathematics and electronic computers 
+
+Modern cryptography destinguied by reliance on mathematics and electronic computers 
 
 ### 5.3 Definitions 
 
@@ -37,7 +40,8 @@ Deniability Property : no cryptographic proof available to guarantee that A's pu
 ### 5.7 Overview of schemes 
 ![image](https://github.com/user-attachments/assets/27ac120b-0563-4f12-aee4-92a12d60f69f)
 
-Symmetric-key encryption : A uses key to encrypt message and B uses same key to decrypt 
+Symmetric-key encryption : A uses key to encrypt message and B uses same key to decrypt
+
 Public-key encryption : B generates a matching public and private key and shares the public key with A, A can encrypt a message under B's public key and B will decrypt with private key 
 
 Message Authentication Codes (MACs) : provide integrity and authenticity in symmetric-key setting
