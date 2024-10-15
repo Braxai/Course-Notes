@@ -30,7 +30,7 @@ Three main security properties
 2. Integrity : prevent adversaries from tampering with private data
 3. Authenticity : be able to determine who created a given message
 
-Most cryptographic algorithsm that guarnatee integrity and authentticity work as follows : 
+Most cryptographic algorithsm that guarantee integrity and authenticity work as follows : 
 - A generates tag or signature on a message
 - A sends message to B
 - B receives message and tag, verifies tag is valid and was not modified by attacker 
