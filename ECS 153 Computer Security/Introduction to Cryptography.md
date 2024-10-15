@@ -65,7 +65,7 @@ Possibilities of how much access eavedropping attacker Eve has to insecure chann
 1. Cipghertext-only attack : E intercepts single encrypted message and wishes to recover plaintext
 2. Plaintext attack : E intercepts encrypted message and already has some partial infromation about the plaintext
 3. Replay attack : E capture encrypted message from A to B and sends encrypted message to B again
-4. Chosen-plaintext attack : E tricks A to encrypt arbitrary messages of E's choice for which E then observes the resulting ciphertexts. When A encrypts a message unkonwn to E, E intercepts and aims to recover the message given what E has observed from previous encryptions 
+4. Chosen-plaintext attack : E tricks A to encrypt arbitrary messages of E's choice for which E then observes the resulting ciphertexts. When A encrypts a message unknown to E, E intercepts and aims to recover the message given what E has observed from previous encryptions 
 5. Chosen-ciphertext attack : E trick B into decrypting ciphertexts to learn decryption of some other ciphertext
 6. Chosen-plaintext/ciphertext attack (most serious threat model) : E can trick A into encrypting some messages of E's choosing and trick B into decrypting some ciphertexts of E's choosing. E would like to learn decryption og some other ciphertext sent by A
 
