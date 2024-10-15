@@ -36,10 +36,17 @@ Cramer's Rule used in matlab or effective calculators, the equations are the imp
 
 ![image](https://github.com/user-attachments/assets/51252501-4f99-4f50-a3e1-048f3e01c6ad)
 
+![image](https://github.com/user-attachments/assets/9149eb02-773f-454a-a9d8-495de18bcef4)
 
+Example 
 
+![image](https://github.com/user-attachments/assets/a8e9e961-f3d5-4834-b415-442fac1e01ba)
 
+![image](https://github.com/user-attachments/assets/1eda63c6-1565-465c-878d-e936d0a155d6)
 
+![image](https://github.com/user-attachments/assets/4a01f41a-02b9-4741-b4d8-72e84ddb3a0b)
+
+![image](https://github.com/user-attachments/assets/dbe22e2e-4b68-4cda-97e6-8aea122edac5)
 
 
 
