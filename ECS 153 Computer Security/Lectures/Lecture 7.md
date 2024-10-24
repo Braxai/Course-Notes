@@ -65,7 +65,7 @@ Block Cipher Problems
 ECB : Electronic Code Book (easy to break) 
 - encrypt each fixed size block using the same key
 
-CBC : Ciphertext Block Chaining (secure)
+CBC : Cipher Block Chaining (secure)
 - XOR ciphertext of previous block with plaintext of current block
   - use initialization vector (random block) to XOR with first plaintext
 
