@@ -57,14 +57,18 @@ Block Cipher
     - Very expensive to have a massive lookup table to store all the random permutation
       - Lookup table is size 2<sup>n</sup>
 - Pseudo Random implemntation : AES has n=128 and randomly chooses from 2<sup>128</sup> possibilities, no ! to reduce security but increase practical implementation
+
 Block Cipher Problems
 - AES (block ciphers) don't pass IND-CPA because it's permutation, every plaintext has deterministic ciphertext block
 - Encrypting messages of arbitrary length
+
 ECB : Electronic Code Book (easy to break) 
 - encrypt each fixed size block using the same key
+
 CBC : Ciphertext Block Chaining (secure)
 - XOR ciphertext of previous block with plaintext of current block
   - use initialization vector (random block) to XOR with first plaintext
+
 CBC Problems :
 - must run sequentially
 - if you lose a ciphertext block on the network you can't decrypt anything after that
