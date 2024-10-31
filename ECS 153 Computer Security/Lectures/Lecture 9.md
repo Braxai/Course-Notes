@@ -13,9 +13,11 @@ Hash Function : k : {0 : 1}<sup>m</sup> --> {0 : 1}<sup>n</sup>
 - 2<sup>m-n</sup> collisions : inputs with same hash value
   - many collisions exist but there are still so many input possibilities it's not feasible for attacker to find them
 
-Second Preimage Resistant Property : given x, hard to find x' != x and h(x) = h(x')
-- x is an ubuntu image and x' is a second primage
-
 One Way Property : given y, hard to find an x such that h(x) = y
 
+Second Preimage Resistant Property : given x, hard to find x' != x and h(x) = h(x')
+- x is an ubuntu image and x' is a second preimage
+- stronger guarnatee than collision resistant property 
+
 Collision Resistant Property : hard to find x<sub>1</sub> != x<sub>2</sub> such that h(x<sub>1</sub>)=h(x<sub>2</sub>)
+
