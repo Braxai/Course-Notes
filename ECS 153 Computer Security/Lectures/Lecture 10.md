@@ -16,5 +16,12 @@ HMAC implement MAC function with secure hash functions
 
 MAC guarantees authenticity and integrity but not confidentiality 
 
-Confidentiality and Integrity 
-- MAC and encrypt : E<sub>k</sub>((m) || MAC<sub>k</sub>(m))
+Authenticated Encrpytion confirm Confidentiality and Integrity 
+- MAC then encrypt : E<sub>k</sub>((m) || MAC<sub>k</sub>(m))
+  - secure if encrpytion algorithm and MAC are secure
+  - downside that MAC is much faster than encryption and decryption
+    - deny of service attack : attacker sends garbage and it has to be decrypted to see it is garbage
+- Encrypt then MAC : MAC<sub>k</sub>(E<sub>k</sub>(m)) || E<sub>k</sub>(m)
+  - secure 
+  - defeats deny of service attack because computing MAC can confirm garbage was sent
+
