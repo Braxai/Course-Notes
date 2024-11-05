@@ -4,5 +4,6 @@ Message Authentication Code (MAC) : confirm who authored a message
   - Function takes key + message and outputs a tag
     - Can't produce a correct tag without a key
   - Verify tag by ensuring it is the same tag that we get when passing the key and message through the function
-- Key shared by sender and receiver (symmetric key cryptography)
-
+- Encryption is an incorrect method for implementing a MAC
+MAC's implemented with secure hash functions
+- H(k<sub>1</sub>||H(k<sub>2</sub>||m))
