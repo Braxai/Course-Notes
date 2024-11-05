@@ -17,4 +17,4 @@ HMAC implement MAC function with secure hash functions
 MAC guarantees authenticity and integrity but not confidentiality 
 
 Confidentiality and Integrity 
-- MAC and encrypt : Esub>k</sub>((m), MAC<sub>k</sub>(m))
+- MAC and encrypt : E<sub>k</sub>((m) || MAC<sub>k</sub>(m))
