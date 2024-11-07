@@ -12,7 +12,7 @@ Find x such that g<sup>x</sup> = a mod p
 
 Diffie-Hellman Key Exchange
 - A : pick random a
-- A --> B : g<sup>a</up> mod p
+- A --> B : g<sup>a</sup> mod p
 - B : pick random b
 - B --> A : g<sup>b</sup> mod p
 - shared key : g<sup>ab</sup> mod p
