@@ -19,6 +19,7 @@ Diffie-Hellman Key Exchange
   - A gets key by doing (g<sup>a</sup> mod p )<sup>b</sup> mod p --> B the inverse
 - based on difficulty of discrete logarithm, attacker could compute some of these values
 - Secure against Eve but not Mallory
+- Public key
 
 Man in the Middle Attack : 
 - Active attack
@@ -29,8 +30,18 @@ Man in the Middle Attack :
     - A --> M : E<sub>g<sup>ac</sup></sub>(m)
     - M --> B : E<sub>g<sup>bc</sup></sub>(m)
 
+Group of N people wish to communicate pair wise 
+- symmetric key encrpytion needs n choose 2 : n(n-1) keys
+  - every person has to store n keys (their key and everyone else's key)
+- public key encryption system needs n pairs of keys
+  - each person creates private/public key pair and publishes the public key
+  - A --> B : A encrypts message with Bob's public key so only Bob can decrypt it
 
-
-
-
-
+RSA 
+1. pick large random primes p and q of equal length
+2. let n = pq
+3. choose e s.t. gcd(e, (p-1)(q-1)) = 1 --> e, (p-1)(q-1) are relatively prime : e is not random and can be deterministic
+4. compute d s.t. ed = 1 mod (p-1)(q-1) because e is relatively prime d must exist and it is unique 
+- Public Key: (n,e) and Private key : d
+- E(m) = m<sup>e</sup> mod n
+- D(c) = c<sup>d</sup> mod n 
