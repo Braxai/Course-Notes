@@ -8,7 +8,7 @@ Find x such that g<sup>x</sup> = a mod p
 - g : generator
   - 1 to p - 1
 - p : modulator
-  - if p is a prime then x is unique
+  - if p is a large prime then x is unique
 
 Diffie-Hellman Key Exchange
 - A : pick random a
