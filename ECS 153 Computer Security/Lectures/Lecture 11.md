@@ -18,6 +18,17 @@ Diffie-Hellman Key Exchange
 - shared key : g<sup>ab</sup> mod p
   - A gets key by doing (g<sup>a</sup> mod p )<sup>b</sup> mod p --> B the inverse
 - based on difficulty of discrete logarithm, attacker could compute some of these values
+- Secure against Eve but not Mallory
+
+Man in the Middle Attack : 
+- Active attack
+- Mallory intercepts messages between A and B, picks c, sends g<sup>c</sup to A and B
+  - A secret key is g<sup>ac</sup> mod p
+  - B secret key is g<sup>bc</sup> mod p
+  - Mallory acts as a middle man making A and B think they are communicating with each other
+    - A --> M : E<sub>g<sup>ac</sup></sub>(m)
+    - M --> B : E<sub>g<sup>bc</sup></sub>(m)
+
 
 
 
