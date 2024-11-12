@@ -27,8 +27,8 @@ Man in the Middle Attack :
   - A secret key is g<sup>ac</sup> mod p
   - B secret key is g<sup>bc</sup> mod p
   - Mallory acts as a middle man making A and B think they are communicating with each other
-    - A --> M : E<sub>g<sub>ac</sub></sub>(m)
-    - M --> B : E<sub>g<sub>bc</sub></sub>(m)
+    - A --> M : E<sub>g<sup>ac</sup></sub>(m)
+    - M --> B : E<sub>g<sup>bc</sup></sub>(m)
 
 Group of N people wish to communicate pair wise 
 - symmetric key encrpytion needs n choose 2 : n(n-1) keys
