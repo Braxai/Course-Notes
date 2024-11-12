@@ -23,7 +23,7 @@ Diffie-Hellman Key Exchange
 
 Man in the Middle Attack : 
 - Active attack
-- Mallory intercepts messages between A and B, picks c, sends g<sup>c</sup to A and B
+- Mallory intercepts messages between A and B, picks c, sends g<sup>c</sup> to A and B
   - A secret key is g<sup>ac</sup> mod p
   - B secret key is g<sup>bc</sup> mod p
   - Mallory acts as a middle man making A and B think they are communicating with each other
