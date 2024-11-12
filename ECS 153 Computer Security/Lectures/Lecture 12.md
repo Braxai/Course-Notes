@@ -8,5 +8,13 @@ RSA
 - D(c) = cd mod n
 
 RSA Digital Signatures 
-sign(m) = m<sup>d</sup> mod n 
-verify(m,t)
+- sign(m) = m<sup>d</sup> mod n 
+- verify(m,t)
+  - true if t<up>e</sup> = m mod n
+  - false otherwise
+
+Mallory wishes to sign m using Alice's key 
+- Alice signed m<sub>1</sub> and m<sub>2</sub>
+  - m<sub>1</sub> mod n
+  - m<sub>2</sub> mod n
+- (m<sub>1</sub> * m<sub>2</sub>)<sup>d</sup> = m<sub>1</sub><sup>d</sup> * m<sub>2</sub><sup>d</sup> mod n
