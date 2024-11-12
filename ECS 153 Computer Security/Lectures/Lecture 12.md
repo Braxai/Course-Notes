@@ -18,3 +18,4 @@ Mallory wishes to sign m using Alice's key
   - m<sub>1</sub> mod n
   - m<sub>2</sub> mod n
 - (m<sub>1</sub> * m<sub>2</sub>)<sup>d</sup> = m<sub>1</sub><sup>d</sup> * m<sub>2</sub><sup>d</sup> mod n
+Mallory asks Alice to sign m' and m*m'<sup>-1</sup>
