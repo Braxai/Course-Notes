@@ -22,5 +22,24 @@ Mallory asks Alice to sign m' and m*m'<sup>-1</sup>
 - Mallory gets from Alice
   - (m')<sup>d</sup> mod n
   - (m*m'<sup>-1</sup>)<sup>d</sup> mod n
-  - (m')<sup>d</sup> (m*m'<sup>-1</sup>)<sup>d</sup> = ((m')<sup>d</sup> * m(m'<sup>-1</sup>))<sup>d</sup>
-    
+  - (m')<sup>d</sup> (m*m'<sup>-1</sup>)<sup>d</sup> = ((m')<sup>d</sup> * m(m'<sup>-1</sup>))<sup>d</sup> = m<sup>d</sup> mod n
+solution to attack is to use hash functions: 
+
+sign(m) = h(m)<sup>d</sup> mod n 
+
+verify(m,t) 
+- true if t<sup>e</sup> = h(m) mod n
+- otherwise false 
+
+![image](https://github.com/user-attachments/assets/4eab8688-0fac-45ae-a169-d70f5e780f95)
+
+On top of making digital signature secure it makes it faster
+
+RSA can be made IND-CPA by padding messages 
+
+How can we verify the public keys are authentic and no the attackers? 
+- Public Key Certificates
+
+
+
+
