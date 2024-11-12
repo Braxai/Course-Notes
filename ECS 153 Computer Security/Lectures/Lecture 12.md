@@ -22,5 +22,5 @@ Mallory asks Alice to sign m' and m*m'<sup>-1</sup>
 - Mallory gets from Alice
   - (m')<sup>d</sup> mod n
   - (m*m'<sup>-1</sup>)<sup>d</sup> mod n
-  - (m')<sup>d</sup> (m*m'<sup>-1</sup>)<sup>d</sup> = ((m')<sup>d</sup> * m(m'<sup>-1</sup>( )<sup>d</sup>
+  - (m')<sup>d</sup> (m*m'<sup>-1</sup>)<sup>d</sup> = ((m')<sup>d</sup> * m(m'<sup>-1</sup>))<sup>d</sup>
     
