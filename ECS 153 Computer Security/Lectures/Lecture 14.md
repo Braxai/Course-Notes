@@ -6,3 +6,4 @@ In the system above security is dependent upon how many users there are : decrea
 
 ![image](https://github.com/user-attachments/assets/25948378-e9ec-46b7-9da4-e2371a2d90f1)
 
+h(password||domain)
