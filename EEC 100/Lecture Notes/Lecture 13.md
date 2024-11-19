@@ -18,3 +18,33 @@ Inverse Transform
 
 ![image](https://github.com/user-attachments/assets/709f5b45-cb37-4b07-93c9-dfb51b2be395)
 
+![image](https://github.com/user-attachments/assets/63153b59-620b-4094-8ca0-8f0cc41c2e0c)
+
+Improper Rational Functions 
+
+![image](https://github.com/user-attachments/assets/74a05040-20fb-4cbb-a931-8aad5be93746)
+
+![image](https://github.com/user-attachments/assets/c1f9816a-6ef7-4b14-bff8-56f91c307cf4)
+
+Poles and Zeros of a Rational Function 
+
+![image](https://github.com/user-attachments/assets/2870cade-8090-4172-9325-4bdb757796db)
+
+Application of Laplace Transform in Circuit Analysis 
+
+![image](https://github.com/user-attachments/assets/5f7e5ea3-9361-49f7-a4e0-7d386cb05e13)
+
+![image](https://github.com/user-attachments/assets/5a6117e3-a0e5-46b2-a280-821338ed394a)
+
+![image](https://github.com/user-attachments/assets/5799d538-7faa-4529-8f0f-a00583dd8311)
+
+![image](https://github.com/user-attachments/assets/28754931-f9cf-4219-8976-2197aa5d011b)
+
+Laplace Transform and the Characteristic Equation 
+
+![image](https://github.com/user-attachments/assets/1a5af685-de72-4f46-bc96-4f74c7e1cf53)
+
+Poles of the Laplace Transform 
+
+![image](https://github.com/user-attachments/assets/5fcdbb0a-925f-4150-962d-d608c0f72815)
+
