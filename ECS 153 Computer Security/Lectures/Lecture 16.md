@@ -17,3 +17,11 @@ Session Number : used only once and embeded in URL
 
 ![image](https://github.com/user-attachments/assets/e008d49b-2a54-48b7-b74c-6a79b07ce7e0)
 
+XSS: Cross-Site Scripting Attack 
+- Name: $name
+- Interests: $interests
+- Stored XSS
+
+Validation 
+
+Sanitization 
