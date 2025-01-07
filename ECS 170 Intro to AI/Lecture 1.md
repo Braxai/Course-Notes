@@ -1,3 +1,3 @@
-# Intro
+# Intro Lecture
 
-## Intro
+## 
