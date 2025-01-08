@@ -1,8 +1,6 @@
 * IO/Devices
   * CPU communicates with I/O devices useing Data, Status and Configuration registers 
   * Device mechanism may be digital, analog, optical, mechanical, etc.
-
-* IO/Device
   * Program running on CPU uses registers to configure device, initiate a device action, detect device state, determine action completion, etc. 
 
 ![image](https://github.com/user-attachments/assets/17456b0c-6d54-4f8d-8767-ae2d0360e015)
