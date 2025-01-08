@@ -73,4 +73,48 @@
 * Expand current state by applying each legal action to generate new set of states
 * Frontier (Open List) : set of all leaf nodes available for expansion 
   * Leaf Node : node with no children
-* PAGE 75
+* Search Strategy : how a search algorithm chooses which state to expand next
+* Repeated State : commonly generateed by loopy paths
+* Redundant Paths : exist whenever there is more than one way to get from one state to another
+  * No reason to keep more than one path to any given state if only concerned about reaching the goal
+
+![image](https://github.com/user-attachments/assets/399e4d3e-e8c0-4b1f-a2f3-262a00a6cd52)
+
+![image](https://github.com/user-attachments/assets/9e186048-453f-48e8-9186-70d27cc4d7eb)
+
+* Rectangular grid Route Finding : each state has four successors so a search tree of depth d that includes repeated states has 4<sup>d</sup> leaves
+* Explored Set (Closed List) : search algorithm data structure that remembers every expanded node
+  * Discard newly generated nodes that match a node in the explored set
+
+![image](https://github.com/user-attachments/assets/a72737eb-d157-40a5-b20d-e8ceb02e1ae0)
+
+## Infrastructure for Search Algorithms 
+* Structure contains four components
+  * n.STATE : the state in the state space to which the node corresponds
+  * n.PARENT : the node in the search tree that generated this nbode
+  * n.ACTION : the action that was applied to the parent to generate the node
+  * n.PATH-COST : the cost, traditinoally denoted by g(n), of the path from the initial state to the node, as indicated by the parent pointers
+ 
+![image](https://github.com/user-attachments/assets/302cbe4c-8a00-4a4d-9fa9-92f1f050f29f)
+
+Funciton CHILD-NODE takes a parent node and an action and returns the resulting child node 
+
+![image](https://github.com/user-attachments/assets/5c390eaa-5335-4217-8192-03564f0b52e7)
+
+* Frontier stored in a queue that has functions empty, pop, and insert
+  * Queue : FIFO
+  * Stack : LIFO
+  * Priority Queue : pops element with highest priority
+ 
+## Measuring Problem-Solving Performance 
+* Completeness : is the algorithm guarnateed to find a solution when there is one?
+* Optimally : does the strategy find the optimal solution?
+* Time Complexity : how long does it take to find a solution?
+* Space Complexity : how much memory is needed to perform the search
+
+* Complexity expressed in terms of three quantities
+  * b (branching factor) : maximum number of successors of any node
+  * d (depth) : depth of shallowest goal node (number of steps along the path from the root)
+  * m : maximum length of any path in the state space
+* Search Cost : typically depends on time complexity but can also include a term for memory usage
+* Total Cost : combines search cost and path cost of the solution found 
