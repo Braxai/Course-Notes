@@ -7,8 +7,8 @@
 # Prolem Solving Agents
 * Goal : set of world states
   * Goal Formulation : based on current situation and agent's performance
-* Problem Formulation : process of decidin what actions and states to consider given a goal
-* Unkown Environment : no additional information for agent, must take action at random
+* Problem Formulation : process of deciding what actions and states to consider given a goal
+* Unknown Environment : no additional information for agent, must take action at random
 * Assumptions about the Environment 
   * Observable : agent knows the current state
   * Discrete : finite actions to choose at any given state
@@ -52,22 +52,22 @@
 * 8-Queens : place 8 queens on chessboard so none are attacked by the others
 ![image](https://github.com/user-attachments/assets/07ba3e7b-8b88-45f6-a267-a091cd0c4c50)
 * Incremental Formulation : operators augment the state description starting with an empty state
-* Complete-State Formulation : start with all 8 queens on the board and move them aroudn
+* Complete-State Formulation : start with all 8 queens on the board and move them around
 
 ## Real World Problems 
-* Route Finding Problen : defined in terms of specificed locations and transitions laong links between them
+* Route Finding Problem : defined in terms of specificed locations and transitions along links between them
 * Airline Travel Problem
 ![image](https://github.com/user-attachments/assets/a629a711-8b81-404c-be13-d5c97f12bb78)
 * Touring Problems : route-finding problems but all nodes must be visited by the time the goal node is reached
   * Traveling Salesperson Problem : each city (node) must be visited exactly once - find the shortest tour
-* VSLI Layout Problem : positinoing millinos of components and connections on a chip to minimize area, circuit delays, stray capacitances and maximize manufacturing yield
+* VSLI Layout Problem : positinoing millions of components and connections on a chip to minimize area, circuit delays, stray capacitances and maximize manufacturing yield
   * Cell Layout : primitive components of the circuit are grouped into cells each with recognized function
   * Channel Routing : find specific route for each wire through the caps between cells
 * Robot Navigation : route-finding problem with a continuous space of movement and an infiite set of possible actions and states
-* Automatic Assembly Sequencing : aim to find an order to assemble partsof some object and if the wrong order is chosen there is no way to add a part later without undoing work already done 
+* Automatic Assembly Sequencing : aim to find an order to assemble parts of some object and if the wrong order is chosen there is no way to add a part later without undoing work already done 
 
 # Searching for Solutions 
-* Search Tree : posible actions seuqneces starting at the initial state
+* Search Tree : possible action sequences starting at the initial state
   * Nodes : states
   * Branches : actions 
 * Expand current state by applying each legal action to generate new set of states
@@ -91,7 +91,7 @@
 ## Infrastructure for Search Algorithms 
 * Structure contains four components
   * n.STATE : the state in the state space to which the node corresponds
-  * n.PARENT : the node in the search tree that generated this nbode
+  * n.PARENT : the node in the search tree that generated this node
   * n.ACTION : the action that was applied to the parent to generate the node
   * n.PATH-COST : the cost, traditinoally denoted by g(n), of the path from the initial state to the node, as indicated by the parent pointers
  
@@ -107,14 +107,14 @@ Funciton CHILD-NODE takes a parent node and an action and returns the resulting 
   * Priority Queue : pops element with highest priority
  
 ## Measuring Problem-Solving Performance 
-* Completeness : is the algorithm guarnateed to find a solution when there is one?
+* Completeness : is the algorithm guaranteed to find a solution when there is one?
 * Optimally : does the strategy find the optimal solution?
 * Time Complexity : how long does it take to find a solution?
 * Space Complexity : how much memory is needed to perform the search
 
 * Complexity expressed in terms of three quantities
   * b (branching factor) : maximum number of successors of any node
-  * d (depth) : depth of shallowest goal node (number of steps along the path from the root)
+  * d (depth) : depth of shallowest goal node (number of steps along the path from the root
   * m : maximum length of any path in the state space
 * Search Cost : typically depends on time complexity but can also include a term for memory usage
 * Total Cost : combines search cost and path cost of the solution found 
