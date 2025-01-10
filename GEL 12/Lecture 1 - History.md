@@ -32,29 +32,29 @@
 
 ## Who named Dinosauria, when, and why? 
 * Richard Owen described Dinosaurs in the first official paper
- * Anamtomy authority 
- * Dinosauria 1842 based on first three dinosaurs 
-  * Reasons for recognizing dinosauria
-   * At least five fused vertebrae in the pelvis
-   * Limbs resembling those of heavy mammals (held vertical) 
-   * Terrestrial, not aquatic
+  * Anamtomy authority 
+  * Dinosauria 1842 based on first three dinosaurs 
+    * Reasons for recognizing dinosauria
+      * At least five fused vertebrae in the pelvis
+      * Limbs resembling those of heavy mammals (held vertical) 
+      * Terrestrial, not aquatic
 
 ## Who were early American dinosaur workers? 
 * Joseph Leidy 1823 - 1891 
- * Named first dinosaur in America : Hadrosaurus Foulkii 1858
-  * Found in New Jersey
+  * Named first dinosaur in America : Hadrosaurus Foulkii 1858
+    * Found in New Jersey
 * Bone War
- * Edward Drinker Cope vs Othniel Charles Marsh
-  * Young / wealthy
-  * Hired people and sent them west to collect fossils
-  * Despised each other, competitive rivalry, wanting to be more successful than the other
-  * Produced first major collection of dinosaur fossils
+  * Edward Drinker Cope vs Othniel Charles Marsh
+    * Young / wealthy
+    * Hired people and sent them west to collect fossils
+    * Despised each other, competitive rivalry, wanting to be more successful than the other
+    * Produced first major collection of dinosaur fossils
 
 ## When was the turning point of dinosaur research, and what triggered it?
 * John Ostrom 1928-2005 Yale professor
- * Trigger in late 1960s he described Deinoychus "terrible claw" Antirrhopus "counterbalancing" (tail)
-  * different dinosaur than what was known
-   * stiff tail kept in the air
-    * Hyperextension, toe can be tilted up
-   * distinct hands
-  * Triggered Dinosaur Renaissance (70s-90s) 
+  * Trigger in late 1960s he described Deinoychus "terrible claw" Antirrhopus "counterbalancing" (tail)
+    * different dinosaur than what was known
+      * stiff tail kept in the air
+        * Hyperextension, toe can be tilted up
+      * distinct hands
+   * Triggered Dinosaur Renaissance (70s-90s) 
