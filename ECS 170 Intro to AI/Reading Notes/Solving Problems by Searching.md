@@ -44,7 +44,8 @@
 ## Toy Problems 
 * Vacuum World
 ![image](https://github.com/user-attachments/assets/651d1fb0-d744-4a05-9976-a9766ead214a)
-![image](https://github.com/user-attachments/assets/bcfc2dac-9a55-4ca2-9bef- (153b6e903463)
+
+![image](https://github.com/user-attachments/assets/bcfc2dac-9a55-4ca2-9bef-153b6e903463)
 
 * 8-Puzzle : sliding-block puzzle (NP-Complete)
 ![image](https://github.com/user-attachments/assets/89016c19-5558-4f3e-a797-77d041423b28)
