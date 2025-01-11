@@ -30,10 +30,35 @@ Rubik's Cube Problem
   * 8-tile problem
   * bad for 8-queen problem because there are only legal solutions at depth 8 (use depth limited algorithm)
 
-* graph search assumes the first time it exapnds a node was the shortest distance to it --> which it needs a consistent heuristic 
+* graph search assumes the first time it expands a node was the shortest distance to it --> which it needs a consistent heuristic 
 
 # Why we need A*
-* Dijkstra's expands nearly everything
+* Dijkstra's expands nearly everything (optimal but inefficient) 
   * one of many best first search algorithms 
 * A* expands a much smaller amount by realizing other paths are suboptimal
 * f(n)=g(n)+h(n) is guaranteed to find shortest path in least amount of time 
+
+# Infomred Search A* Algorithm 
+* f(n) = g(n) + h(n)
+  * h(n) admissible and must never over-estimate the true cost of going from n to the goal state
+    * goal state h(n) = 0
+* Graph search assuming the first time a state is visited it must be the shortest path to that state
+
+# Inventing Admissible Heuristics (3 Ways) 
+* Want admissible heuristic to be as large as possible
+
+Idea 1 : consider geometry of the problem to create the heuristic 
+
+Idea 2 : 
+* Original game : lists constraints/rules for environment
+* Relaxed game : relax constraints/rules to create a simpler game
+  * cost function for relaxed game is an admissible heuristic for the original version
+    * why? constraints add cost, relaxing them will create an alternative cost function that will be less
+
+8-puzzle game 
+* relax the rules and come up with heuristics, take the max 
+
+# Performance Guarantees for A* 
+
+
+# Data Strcuture Guarantees when using A*, why?
