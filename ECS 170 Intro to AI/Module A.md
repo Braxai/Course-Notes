@@ -80,3 +80,11 @@ Idea 2 :
 * Consistent heuristic guaranteed to be admissible
 * A* double edged sword : for most problems the size of open-fringe will be exponential to path cost
  * shortest path problem is intractable
+
+g(n) - The *actual* cost of going from the start state to state n
+h(n) - The under-estimate of the cost of going from state n to the goal state.
+
+h*(n) - The *actual* cost of going from state n to the goal state, hence h(n) <= h*(n)
+c(n,n') - The actual cost of going from state n to n', note this is the incremental cost
+f(n) = g(n) + h(n) - the cost of going from the start state to state n and then the under-estimate of going from n to the goal state
+f*/C* the optimum cost of going from the start state to the goal state.
