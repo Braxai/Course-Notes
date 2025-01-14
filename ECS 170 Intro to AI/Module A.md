@@ -58,7 +58,25 @@ Idea 2 :
 8-puzzle game 
 * relax the rules and come up with heuristics, take the max 
 
-# Performance Guarantees for A* 
+* Consistent Heuristic
+ * Obeys triangular inequality
+  * Admissible heuristic h is consistent (satisfies monotone restriction) if for every node N and every sucessor N' of N: h(N) <= c(N,N') + h(N')
+   * shortest path to goal state is the direct path
 
+# Performance Guarantees for A* 
+* Optimality of A* : n is on the optimal path
+ * Terminology
+  * f* is the cost of the optimal solution path
+  * f* <= f(n) because the heuristic is admissible
+ * All good states have h(n) = 0
+ * Proof by Contradiction
+<img width="469" alt="image" src="https://github.com/user-attachments/assets/489499dd-15a3-4d68-8532-faa1952bb10f" />
+* Optimally Efficient : does enough work to find global optimum but no more unecessary work
+ * expands no node with f(n) > f*
+* Best admissible heuristic under-estimates the least
+ * heuristic that dominates another is guaranteed to do less work 
 
 # Data Strcuture Guarantees when using A*, why?
+* Consistent heuristic guaranteed to be admissible
+* A* double edged sword : for most problems the size of open-fringe will be exponential to path cost
+ * shortest path problem is intractable
