@@ -67,4 +67,21 @@ Interrupts for Single Device
 ![image](https://github.com/user-attachments/assets/2289479f-f170-4aa2-bcba-f80556f9627b)
 * Device must be enabled for interrupts
  * Mask = 1 enables corresponding interrupt
- * Mask = 0 default 
+ * Mask = 0 default
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
