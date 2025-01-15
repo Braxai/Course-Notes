@@ -23,3 +23,4 @@ Game Theory Perspective Requirements
 * player is rational
 
 Algorithm Contingency Plan : minimize maximum loss
+* Computing Nash Equilibirum
