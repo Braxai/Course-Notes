@@ -79,7 +79,8 @@ Idea 2 :
 # Data Strcuture Guarantees when using A*, why?
 * Consistent heuristic guaranteed to be admissible
 * A* double edged sword : for most problems the size of open-fringe will be exponential to path cost
- * shortest path problem is intractable
+ * shortest path problem is intractable, A* optimal and optimally efficient but not a polynomial time algorithm
+ * A* not an approximation algorithm 
 
 g(n) - The *actual* cost of going from the start state to state n
 h(n) - The under-estimate of the cost of going from state n to the goal state.
@@ -88,3 +89,11 @@ h*(n) - The *actual* cost of going from state n to the goal state, hence h(n) <=
 c(n,n') - The actual cost of going from state n to n', note this is the incremental cost
 f(n) = g(n) + h(n) - the cost of going from the start state to state n and then the under-estimate of going from n to the goal state
 f*/C* the optimum cost of going from the start state to the goal state.
+
+Limitations of A*
+* number of nodes within goal contour is exponential to length of solution
+* Need to keep all nodes in OPEN in memory (variation of BFS)
+
+Iterative Deepening A* 
+* Use f(N) = g(N) + h(N) with admissible h
+• Each iteration is depth-first with cutoff on the value of f of expanded nodes
