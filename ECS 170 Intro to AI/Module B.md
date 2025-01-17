@@ -24,3 +24,26 @@ Game Theory Perspective Requirements
 
 Algorithm Contingency Plan : minimize maximum loss
 * Computing Nash Equilibirum
+
+* Max : maximizes lower bound
+* Min : minimizes upper bound
+* Nash Equilibrium : result if both Max and Min play optimally
+ * Composite Functions : Max(Min(values))
+Recursive Algorithm
+![image](https://github.com/user-attachments/assets/bcb05479-40e8-4ae4-912f-e5d6af4db62e)
+
+Informed vs Adversarial Search Differences
+* informed can wokr on a graph but min-max only on a tree
+* weights are on edges for informed and nodes for adversarial: sattes have payoffs 
+* aim : informed typically solves the shortest path problem but adversarial minimizing maximum loss
+
+Most games can't explore bottom of the search tree so we implement depth limited search 
+* Need an evaluation function to determine how good a state is (heuristic, not admissible)
+
+Evaluation Function Types
+* Attach values to pieces or locations
+ * chess pieces
+* Estimate number of ways to win/lose
+Function needs to be accurate, fast, easy to order
+ * order tree in way so ordering of nodes is strictly monotonically increasing/decreasing
+
