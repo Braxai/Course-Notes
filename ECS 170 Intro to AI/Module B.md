@@ -15,7 +15,7 @@ Game Classifications
   * deterministic : applying action i in state j will always get you to the same new state
   * chance
 
-Game Theory Perspective Requirements 
+Game Theory Perspective Requirements (requirements to turn something into a game)
 * turn taking
 * two player
 * zero-sum : extent of a player's loss is the extent of the other's win
@@ -46,4 +46,27 @@ Evaluation Function Types
 * Estimate number of ways to win/lose
 Function needs to be accurate, fast, easy to order
  * order tree in way so ordering of nodes is strictly monotonically increasing/decreasing
+
+Properties of Minimax Search
+* Complete : finite tree
+* Optimal against an opponent
+* Time Complexity : O(b<sup>m</sup>)
+* Space Complexity : O(bm) (depth-first exploration)
+reasonable games exact solution infeasable : chess b = 35 and m = 100
+
+## Alpha Beta Pruning 
+Not an approximation algorithm, will calculate the exact nash equilibrium in less iterations 
+
+Two interpretations to algorithm
+* efficient computation of nash equilibrium via pruning state space
+* pruning state space by exlpoiting that both players are rational
+ * most optimal move needs to be explored first to maximize amount of pruning
+
+![image](https://github.com/user-attachments/assets/2ffd136e-0993-42dd-a5f3-515d6290db53)
+Same as mini-max except two changes 
+* maintain alpha/beta (lower/upper bounds on NE) value for each node
+* test for irrational behavior
+
+
+
 
