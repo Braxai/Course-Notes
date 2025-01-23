@@ -27,3 +27,13 @@ Task Status
 * testing in progress
 * done
 
+Recommended Procedure
+* break down major features into small tasks
+* add tasks to backlog
+* in sprint planning, decide which tasks you want to pick for this sprint and make sure they can be completed in the given sprint
+* once task is picked, move to current sprint and set as to do
+* assign tasks to team members
+* throughout the task, keep the status updated
+* Github projects allows linking tasks to PRs. Add other team members and TA in reviewers of PR
+* Conduct sprint retrospectives
+
