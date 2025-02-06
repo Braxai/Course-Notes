@@ -46,7 +46,17 @@ MCMC Samplers : type of randomized algorithm
 * Prior Sampler : range of values, have a probability cutoff, generate a random value and if it is <= to cutoff set to true otherwise false
  * Computational problem : calcualting way more nodes than needed
 
+MCMC Sampler Problems : higher probability is false, at or below is true
 
+Rejection Sampling is Monte Carlo Integration 
+* function returns true or false, generate many random samples and use those to check probability
+* reject days that don't match evidence 
+
+Likelihood weighting sampler : generate a day so the evidence is always matched
+* is proposition in evidence?
+ * no --> sample it
+ * yes --> add correction term
+* use weight values to determine final proposition probability 
 
 
 
