@@ -37,9 +37,34 @@ Each transactino includes 9 bits
 * S.1 | Address.7 | R/W.1 | AK.1 | Data.8 | AK.1 | P.1
   * structure.number of bits
   * values show up by different writers through some sort of synchronization
- Examples
+
+Examples
 * Multi-byte Write : S | Address | 0 | 1 | data | 1 | data | 1 | P
 * One-byte Read from Slave : S | Address | 1 | 1 | data | 0 | P
 * Write then Read : S | Address | 0 | 1 | data | 1 | S | Address | 1 | 1 | data | 0 | P
+
+I2C message structure/msemantics device specific, not globally defined 
+
+I2C general call addres (000 0000) used for broadcast message 
+
+I2C Electrical Interface 
+* open drain device connection
+ * active pull down, passive pull up
+  * pull down will win (have priority) over pull up
+  * addresses closest to 0 have higher priority because they are lower
+ * each device can drive or listen on each line
+
+Start / Stop Signaling : SDA transition during clock High indicates Start or Stop 
+* Data Transitons : other SDA transitions occur when the clock is low
+ * data must be stable when clock high
+
+I2C Arbitration 
+* all devices can see the bus, won't send messages if not idle
+
+Clock Synchronization 
+* during arbitration, clocks from multiple contending masters will synchronize
+ * SCL low is 'wired XOR' so a lagging clock will delay the transition of SCL
+ * each master must listen to SCLin to determine end of SCL clock phase, not just consider SCLout
+  * Clock Stretching : if slave is not ready to send/receive bit, before clock goes high, slave pulls down SCL to stretch the clock until slave is ready
 
 
