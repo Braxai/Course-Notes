@@ -131,4 +131,14 @@ CAN Clocking
 Bit Stuffing 
 * to avoid phase shift problem, after five identical bits, the sender data-link layer stuffs a dummy complement bit in the data stream
 * the receiver data-link layer discards the dummy bit receiving a series of five identical bits
-* ensures timing of physical layer 
+* ensures timing of physical layer
+
+Erros 
+* Error handling
+ * CAN recognizes various types of errors
+* Bit Error
+ * node that is sending a bit on the bus also monitors the bus
+ * when the bit value monitored is different from the bit value being sent, the node interprets the situation as an error
+* Stuff error : six consecutive dominant or recessive levels occurs in a mesage field
+* CRC error
+* Acknowledgement error
