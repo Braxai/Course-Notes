@@ -80,5 +80,7 @@ Two Limitations
 * exploration vs exploitation problem : always exploiting a series of actions that yields a reward rather than exploring alternative actinos that could yield higher rewards
   * choose best action (per q tables) most of the time, with a (decreasingly) small chance randomly choose an action
 
-Third Limitation 
-* 
+Q Learning modelled by reward and state transition function
+* Incorrect assumption : assumes the two functions are nondeterministic
+* can be resolved by tracking an overall mean calculated based on the previous mean and the new number
+
