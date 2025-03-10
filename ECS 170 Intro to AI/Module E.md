@@ -29,3 +29,24 @@ Feedforward Layers : part of network that do reasoning
     * decisionboundary orthogonal to weight vector
       * y intercept is -w0
 
+--- SKIPPED 3 LECTURES WTF ---
+
+RELU Paddle Detctor
+* paddle : kernel / filter / weights put over the image
+* element wise multiplication, shift kernel afterwards
+ * downscales image
+  * ceil([(W-K+2P)/S]+1)
+  * w = 5, k = 3, p = 0, s = 1 --> 3 x 3 result
+ ![image](https://github.com/user-attachments/assets/7a6981fc-4e19-470c-bb13-502c30ea0f24)
+
+RELU : 
+* number > bias --> output number
+* if net <+ bias --> output 0
+
+flatten RELU outputs to one large vector which is used as inputs to Feedforward layer 
+
+Seeding the Q network : fixed entries in the Q table
+
+
+
+
