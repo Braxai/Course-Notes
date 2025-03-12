@@ -47,6 +47,11 @@ flatten RELU outputs to one large vector which is used as inputs to Feedforward 
 
 Seeding the Q network : fixed entries in the Q table
 
+3 / 12 lecture
 
+Deep Mind Paper Innovations 
+* Random sampling from replay buffer
+* Two models not one
+ * teacher / student
 
 
